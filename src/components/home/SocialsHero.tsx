@@ -1,15 +1,39 @@
+import Image from "next/image";
+import Link from "next/link";
 import { FunctionComponent } from "react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 
+const blob = (
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path
+      className="bg-accent"
+      d="M58.7,-54.6C73.5,-44,80.9,-22,80.7,-0.2C80.5,21.7,72.8,43.3,58.1,56.3C43.3,69.3,21.7,73.5,2.5,71C-16.7,68.5,-33.4,59.3,-50,46.4C-66.5,33.4,-82.9,16.7,-84.3,-1.4C-85.7,-19.5,-72.1,-39,-55.5,-49.5C-39,-60.1,-19.5,-61.8,1.3,-63C22,-64.3,44,-65.2,58.7,-54.6Z"
+      transform="translate(100 100)"
+    />
+  </svg>
+);
+
 export const SocialsHero: FunctionComponent = () => {
   return (
-    <div className="text-6xl flex">
-      <button className="p-8">
-        <SiGithub />
-      </button>
-      <button className="p-4">
-        <SiLinkedin />
-      </button>
-    </div>
+    <section className="text-white h-hero flex justify-between items-center lg:px-60 sm:flex-col md:flex-row">
+      <div className="flex md:flex-col">
+        <h2 className="text-4xl pb-8 font-bold underline underline-offset-8 decoration-accent">
+          CONTACT ME
+        </h2>
+        <div className="text-6xl flex text-accent">
+          <button className="p-8">
+            <SiGithub />
+          </button>
+          <button className="p-4">
+            <SiLinkedin />
+          </button>
+        </div>
+      </div>
+      <Link href="/contact">
+        <div className="bg-accent w-80 h-80 rounded-full flex justify-center items-center font-black text-4xl">
+          CONTACT ME
+        </div>
+      </Link>
+    </section>
   );
 };

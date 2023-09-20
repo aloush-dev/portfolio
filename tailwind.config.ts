@@ -18,7 +18,7 @@ const config: Config = {
     require("tailwindcss-themer")({
       defaultTheme: {
         extend: {
-          colors: { background: "black", accent: "#8E05C2", primary: "red" },
+          colors: { background: "black", accent: "#8A3FFC", primary: "red" },
         },
       },
     }),

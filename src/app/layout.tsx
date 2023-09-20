@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html className={barlow.className} lang="en">
-      <body>
+      <body className="bg-background">
         <Header />
         {children}
         <Footer />
