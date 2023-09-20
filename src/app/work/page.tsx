@@ -1,6 +1,7 @@
 import { FunctionComponent } from "react";
 
-export const Work: FunctionComponent = () => {
+const Work: FunctionComponent = () => {
+  return <div></div>;
+};
 
-    return <div></div>
-}
+export default Work;

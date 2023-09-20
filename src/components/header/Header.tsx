@@ -7,24 +7,54 @@ import { usePathname } from "next/navigation";
 
 export const Header: FunctionComponent = () => {
   const currentPage = usePathname();
-  const linkStyle = "p-4";
 
   return (
     <header className="bg-black text-white flex justify-between items-center p-4 h-[77px] border-b-2 border-accent sticky top-0 z-10">
       <h1 className="font-black text-2xl">ALI ABDALLAH</h1>
 
       <nav className="hidden md:block">
-        <Link className={linkStyle} href="">
-          HOME
+        <Link
+          className={`${
+            currentPage === "/"
+              ? "underline underline-offset-8 decoration-accent decoration-4 p-4"
+              : "p-4"
+          }`}
+          href={`/`}
+        >
+          Home
         </Link>
-        <Link className={linkStyle} href="">
-          ABOUT
+
+        <Link
+          className={`${
+            currentPage === "/about"
+              ? "underline underline-offset-8 decoration-accent decoration-4  p-4"
+              : "p-4"
+          }`}
+          href={`/about`}
+        >
+          About
         </Link>
-        <Link className={linkStyle} href="">
-          WORK
+
+        <Link
+          className={`${
+            currentPage === "/work"
+              ? "underline underline-offset-8 decoration-accent decoration-4  p-4"
+              : "p-4"
+          }`}
+          href={`/work`}
+        >
+          Work
         </Link>
-        <Link className={linkStyle} href="">
-          CONTACT
+
+        <Link
+          className={`${
+            currentPage === "/contact"
+              ? "underline underline-offset-8 decoration-accent decoration-4  p-4"
+              : "p-4"
+          }`}
+          href={`/contact`}
+        >
+          Contact
         </Link>
       </nav>
 

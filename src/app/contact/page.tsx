@@ -1,6 +1,8 @@
 import { FunctionComponent } from "react";
 
-export const Contact: FunctionComponent = () => {
+ const Contact: FunctionComponent = () => {
 
     return <div></div>
 }
+
+export default Contact
