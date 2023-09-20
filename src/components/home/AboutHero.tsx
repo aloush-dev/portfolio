@@ -20,7 +20,7 @@ export const AboutHero: FunctionComponent = () => {
   const iconStyle = "pr-8 pt-8 text-accent";
 
   return (
-    <section className="text-white h-hero flex justify-center items-center lg:px-60 sm:flex-col md:flex-row ">
+    <section className="text-white h-hero flex justify-center items-center lg:px-60 sm:flex-col md:flex-row border-b-2 border-accent">
       <div className="flex md:flex-col">
         <h2 className="text-4xl pb-8 font-bold underline underline-offset-8 decoration-accent">
           ABOUT ME

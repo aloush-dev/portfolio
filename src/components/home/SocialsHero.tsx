@@ -17,21 +17,24 @@ export const SocialsHero: FunctionComponent = () => {
   return (
     <section className="text-white h-hero flex justify-between items-center lg:px-60 sm:flex-col md:flex-row">
       <div className="flex md:flex-col">
-        <h2 className="text-4xl pb-8 font-bold underline underline-offset-8 decoration-accent">
-          CONTACT ME
+        <h2 className="text-4xl font-bold underline underline-offset-8 decoration-accent">
+          MY SOCIALS
         </h2>
+        <p className="py-6 text-2xl">
+          Feel free to reach out, I'd love to hear from you!
+        </p>
         <div className="text-6xl flex text-accent">
-          <button className="p-8">
+          <button className="pr-8">
             <SiGithub />
           </button>
-          <button className="p-4">
+          <button className="pr-8">
             <SiLinkedin />
           </button>
         </div>
       </div>
       <Link href="/contact">
-        <div className="bg-accent w-80 h-80 rounded-full flex justify-center items-center font-black text-4xl">
-          CONTACT ME
+        <div className="bg-accent w-80 h-80 rounded-full flex justify-center items-center font-black text-4xl transition-transform hover:scale-110">
+          <p>CONTACT ME</p>
         </div>
       </Link>
     </section>
