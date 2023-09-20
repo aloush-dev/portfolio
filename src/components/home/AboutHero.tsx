@@ -17,11 +17,11 @@ import {
 } from "react-icons/si";
 
 export const AboutHero: FunctionComponent = () => {
-  const iconStyle = "pr-8 pt-8 text-accent";
+  const iconStyle = "md:pr-8 md:pt-8 pr-2 pt-2 text-accent";
 
   return (
-    <section className="text-white h-hero flex justify-center items-center lg:px-60 sm:flex-col md:flex-row border-b-2 border-accent">
-      <div className="flex md:flex-col">
+    <section className="text-white h-hero flex flex-col justify-center items-center p-8 lg:px-60 md:flex-row border-b-2 border-accent">
+      <div className="flex flex-col">
         <h2 className="text-4xl pb-8 font-bold underline underline-offset-8 decoration-accent">
           ABOUT ME
         </h2>
@@ -62,13 +62,13 @@ export const AboutHero: FunctionComponent = () => {
           </li>
         </ul>
       </div>
-      <Image
-        src={aboutHero}
-        width={300}
-        height={300}
-        alt="Photo of me for about hero"
-        className="border-4 border-white"
-      />
+      <div className="w-[40%] md:w-auto hidden md:block">
+        <Image
+          src={aboutHero}
+          alt="Photo of me for about hero"
+          className="border-4 border-white"
+        />
+      </div>
     </section>
   );
 };

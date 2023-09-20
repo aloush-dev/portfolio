@@ -12,6 +12,9 @@ const config: Config = {
       height: {
         hero: "calc(100svh - 77px)",
       },
+      width: {
+        "mobile-width": "calc(100vw - 5rem)",
+      },
     },
   },
   plugins: [
