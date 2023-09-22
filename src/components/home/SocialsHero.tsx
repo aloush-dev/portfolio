@@ -15,8 +15,8 @@ const blob = (
 
 export const SocialsHero: FunctionComponent = () => {
   return (
-    <section className="text-white h-hero flex justify-between items-center lg:px-60 flex-col lg:flex-row">
-      <div className="flex flex-col p-20 lg:p-0">
+    <section className="text-white h-hero flex justify-between items-center lg:px-40 flex-col lg:flex-row">
+      <div className="flex flex-col p-20 lg:p-4">
         <h2 className="text-4xl font-bold underline underline-offset-8 decoration-accent">
           MY SOCIALS
         </h2>
@@ -33,7 +33,7 @@ export const SocialsHero: FunctionComponent = () => {
         </div>
       </div>
       <Link href="/contact">
-        <div className="bg-accent w-mobile-width h-40 md:w-80 md:h-80 mb-20 md:mb-40 md:rounded-full flex justify-center items-center font-black text-xl md:text-4xl transition-transform hover:scale-110">
+        <div className="bg-accent w-mobile-width h-40 md:w-80 md:h-80 mb-20 md:mb-60 lg:mb-2 md:rounded-full flex justify-center items-center font-black text-xl md:text-4xl transition-transform hover:scale-110">
           <p>CONTACT ME</p>
         </div>
       </Link>
