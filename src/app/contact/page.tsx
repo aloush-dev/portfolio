@@ -1,8 +1,14 @@
+import { ContactForm } from "@/components/contact/ContactForm";
 import { FunctionComponent } from "react";
 
- const Contact: FunctionComponent = () => {
+const Contact: FunctionComponent = () => {
+  return (
+    <section>
+      <div className="p-8">
+        <ContactForm />
+      </div>
+    </section>
+  );
+};
 
-    return <div></div>
-}
-
-export default Contact
+export default Contact;

@@ -9,6 +9,7 @@ export const MainHero: FunctionComponent = () => {
         className="object-cover object-center w-full"
         src={heroImage}
         alt="Main Homepage Image"
+        priority={true}
       />
       <div className="bg-accent absolute bottom-0 right-0 p-10 min-w-[50%] md:w-[50%] m-10 font-extrabold ">
         <h2 className="text-white text-4xl md:text-6xl lg:text-8xl text-center ">
