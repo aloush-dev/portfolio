@@ -15,7 +15,7 @@ const blob = (
 
 export const SocialsHero: FunctionComponent = () => {
   return (
-    <section className="text-white h-hero flex justify-between items-center lg:px-40 flex-col lg:flex-row">
+    <section className="text-primary-text h-hero flex justify-between items-center lg:px-40 flex-col lg:flex-row">
       <div className="flex flex-col p-20 lg:p-4">
         <h2 className="text-4xl font-bold underline underline-offset-8 decoration-accent">
           MY SOCIALS

@@ -7,7 +7,7 @@ import { Resend } from "resend";
 export const ContactForm: FunctionComponent = () => {
   const inputStyle =
     "p-4 my-4 text-black focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent text-base";
-  const labelStyle = "text-white flex flex-col justify-center m-4 text-xl";
+  const labelStyle = "text-primary-text flex flex-col justify-center m-4 text-xl";
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -61,7 +61,7 @@ export const ContactForm: FunctionComponent = () => {
         />
       </label>
 
-      <button className="bg-accent text-white font-bold flex justify-center items-center p-4 m-4">
+      <button className="bg-accent text-primary-text font-bold flex justify-center items-center p-4 m-4">
         SEND <TbSend />
       </button>
     </form>

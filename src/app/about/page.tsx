@@ -5,7 +5,7 @@ import { FunctionComponent } from "react";
 
 const About: FunctionComponent = () => {
   return (
-    <div className="p-8 text-white">
+    <div className="p-8 md:px-60 text-primary-text">
       <AboutPageHero />
       <Skills />
       <WorkExperience />
