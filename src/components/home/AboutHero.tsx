@@ -14,10 +14,11 @@ import {
   SiHtml5,
   SiCss3,
   SiTailwindcss,
+  SiJest,
 } from "react-icons/si";
 
 export const AboutHero: FunctionComponent = () => {
-  const iconStyle = "md:pr-8 md:pt-8 pr-2 pt-2 text-accent";
+  const iconStyle = "md:pr-8 md:pt-8 p-2 text-accent";
 
   return (
     <section className="text-white h-hero flex flex-col justify-center items-center p-8 lg:px-60 md:flex-row border-b-2 border-accent">
@@ -26,6 +27,7 @@ export const AboutHero: FunctionComponent = () => {
           ABOUT ME
         </h2>
         <p className="font-medium pr-8">{aboutInfo.aboutHero}</p>
+
         <ul className="flex flex-wrap pt-6 text-4xl">
           <li className={iconStyle}>
             <SiJavascript />
@@ -59,6 +61,9 @@ export const AboutHero: FunctionComponent = () => {
           </li>
           <li className={iconStyle}>
             <SiTailwindcss />
+          </li>
+          <li className={iconStyle}>
+            <SiJest />
           </li>
         </ul>
       </div>
