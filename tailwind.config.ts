@@ -29,7 +29,7 @@ const config: Config = {
             footer: "black",
             "header-text": "white",
             "footer-text": "white",
-            "accent-text" : 'white'
+            "accent-text": "white",
           },
         },
       },
@@ -45,7 +45,7 @@ const config: Config = {
               footer: "black",
               "header-text": "white",
               "footer-text": "white",
-              "accent-text" : 'white'
+              "accent-text": "white",
             },
           },
         },
@@ -60,7 +60,22 @@ const config: Config = {
               footer: "#2F58CD",
               "header-text": "white",
               "footer-text": "white",
-              "accent-text" : 'white'
+              "accent-text": "white",
+            },
+          },
+        },
+        {
+          name: "nature",
+          extend: {
+            colors: {
+              background: "#172d13",
+              accent: "#d76f30",
+              "primary-text": "white",
+              header: "#6bb77b",
+              footer: "#6bb77b",
+              "header-text": "white",
+              "footer-text": "white",
+              "accent-text": "white",
             },
           },
         },
