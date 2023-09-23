@@ -1,32 +1,30 @@
+"use client";
+
 import { Header } from "@/components/header/Header";
 import "./globals.css";
-import type { Metadata } from "next";
 import { Barlow } from "next/font/google";
 import { Footer } from "@/components/footer/Footer";
+import { useState } from "react";
 
 const barlow = Barlow({
   weight: ["400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: `Ali Abdallah | Portfolio |`,
-  description:
-    "Explore my portfolio showcasing creative web development and design",
-};
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [theme, setTheme] = useState("");
+
   return (
     <html className={barlow.className} lang="en">
-      <body className="darkBlue">
+      <body className={theme}>
         <main className="bg-background">
           <Header />
           {children}
-          <Footer />
+          <Footer setTheme={setTheme} />
         </main>
       </body>
     </html>

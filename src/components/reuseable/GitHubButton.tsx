@@ -10,7 +10,7 @@ export const GitHubButton: FunctionComponent<GitHubButtonProps> = ({
   githubLink,
 }) => {
   return (
-    <Link href={githubLink}>
+    <Link target="_blank" href={githubLink}>
       <button className="text-accent-text bg-accent p-2 text-lg flex justify-center items-center rounded-sm md:mr-4">
         <SiGithub className='pr-2 text-4xl' /> GitHub
       </button>

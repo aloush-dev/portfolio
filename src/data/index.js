@@ -20,7 +20,7 @@ export const projects = [
     description:
       "PokerBacker is a robust and user-friendly application designed to assist poker players who pay for others to enter tournaments (backers). This financial tracking tool helps manage and record transactions, providing a clear picture of your investment and its performance. PokerBacker is built using Next.js with React components for a seamless and responsive user experience.",
     githubLink: "https://github.com/Hard-Luck/poker-backer",
-    liveLink: "www.poker-backer.com",
+    liveLink: "https://www.poker-backer.com",
   },
 ];
 
