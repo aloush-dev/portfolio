@@ -71,7 +71,7 @@ export const AboutHero: FunctionComponent = () => {
         <Image
           src={aboutHero}
           alt="Photo of me for about hero"
-          className="border-4 border-white"
+          className="border-4 border-accent"
         />
       </div>
     </section>

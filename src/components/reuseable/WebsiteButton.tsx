@@ -11,7 +11,7 @@ export const WebsiteButton: FunctionComponent<WebsiteButtonProps> = ({
 }) => {
   return (
     <Link href={liveLink}>
-      <button className="text-primary-text bg-accent p-2 text-lg flex justify-center items-center rounded-sm">
+      <button className="text-accent-text bg-accent p-2 text-lg flex justify-center items-center rounded-sm">
         <CgWebsite className="pr-2 text-4xl" /> Website
       </button>
     </Link>

@@ -19,7 +19,7 @@ export const Skills: FunctionComponent = () => {
   const containerStyle =
     "flex justify-content items-center bg-accent p-2 m-2 rounded-sm";
   const iconStyle = "";
-  const labelStyle = "text-base ";
+  const labelStyle = "text-base text-accent-text";
 
   return (
     <section className="pb-20">

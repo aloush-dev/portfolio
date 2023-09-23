@@ -11,7 +11,7 @@ export const GitHubButton: FunctionComponent<GitHubButtonProps> = ({
 }) => {
   return (
     <Link href={githubLink}>
-      <button className="text-primary-text bg-accent p-2 text-lg flex justify-center items-center rounded-sm md:mr-4">
+      <button className="text-accent-text bg-accent p-2 text-lg flex justify-center items-center rounded-sm md:mr-4">
         <SiGithub className='pr-2 text-4xl' /> GitHub
       </button>
     </Link>

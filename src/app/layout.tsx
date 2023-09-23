@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html className={barlow.className} lang="en">
-      <body className="darkBlueTheme">
+      <body className="darkBlue">
         <main className="bg-background">
           <Header />
           {children}

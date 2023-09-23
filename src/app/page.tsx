@@ -4,10 +4,10 @@ import { SocialsHero } from "@/components/home/SocialsHero";
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    <>
       <MainHero />
       <AboutHero />
       <SocialsHero />
-    </main>
+    </>
   );
 }

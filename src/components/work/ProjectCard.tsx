@@ -24,7 +24,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
       <ul className="flex py-2">
         {project.techStack.map((skill, index) => {
           return (
-            <li key={index} className="px-2 py-1 mr-2 bg-accent font-semibold">
+            <li key={index} className="px-2 py-1 mr-2 bg-accent text-accent-text font-semibold">
               {skill}
             </li>
           );

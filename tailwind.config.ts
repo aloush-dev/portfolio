@@ -27,12 +27,15 @@ const config: Config = {
             "primary-text": "white",
             header: "black",
             footer: "black",
+            "header-text": "white",
+            "footer-text": "white",
+            "accent-text" : 'white'
           },
         },
       },
       themes: [
         {
-          name: "darkBlueTheme",
+          name: "darkBlue",
           extend: {
             colors: {
               background: "black",
@@ -40,6 +43,24 @@ const config: Config = {
               "primary-text": "white",
               header: "black",
               footer: "black",
+              "header-text": "white",
+              "footer-text": "white",
+              "accent-text" : 'white'
+            },
+          },
+        },
+        {
+          name: "lightBlue",
+          extend: {
+            colors: {
+              background: "white",
+              accent: "#2F58CD",
+              "primary-text": "black",
+              header: "black",
+              footer: "black",
+              "header-text": "white",
+              "footer-text": "white",
+              "accent-text" : 'white'
             },
           },
         },
