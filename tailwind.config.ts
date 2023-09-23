@@ -56,8 +56,8 @@ const config: Config = {
               background: "white",
               accent: "#2F58CD",
               "primary-text": "black",
-              header: "black",
-              footer: "black",
+              header: "#2F58CD",
+              footer: "#2F58CD",
               "header-text": "white",
               "footer-text": "white",
               "accent-text" : 'white'
