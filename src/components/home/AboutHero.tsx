@@ -33,6 +33,12 @@ export const AboutHero: FunctionComponent = () => {
             <SiJavascript />
           </li>
           <li className={iconStyle}>
+            <SiHtml5 />
+          </li>
+          <li className={iconStyle}>
+            <SiCss3 />
+          </li>
+          <li className={iconStyle}>
             <SiReact />
           </li>
           <li className={iconStyle}>
@@ -52,12 +58,6 @@ export const AboutHero: FunctionComponent = () => {
           </li>
           <li className={iconStyle}>
             <SiPostgresql />
-          </li>
-          <li className={iconStyle}>
-            <SiHtml5 />
-          </li>
-          <li className={iconStyle}>
-            <SiCss3 />
           </li>
           <li className={iconStyle}>
             <SiTailwindcss />

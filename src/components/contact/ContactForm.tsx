@@ -13,10 +13,9 @@ export const ContactForm: FunctionComponent = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
-
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
     resend.emails
       .send({
         from: email,
@@ -40,6 +39,7 @@ export const ContactForm: FunctionComponent = () => {
           onChange={(e) => setName(e.target.value)}
           value={name}
           className={inputStyle}
+          required
         />
       </label>
       <label className={labelStyle}>
@@ -48,6 +48,7 @@ export const ContactForm: FunctionComponent = () => {
           onChange={(e) => setEmail(e.target.value)}
           value={email}
           className={inputStyle}
+          required
         />
       </label>
       <label className={labelStyle}>
@@ -56,6 +57,7 @@ export const ContactForm: FunctionComponent = () => {
           onChange={(e) => setMessage(e.target.value)}
           value={message}
           className={`${inputStyle} h-60`}
+          required
         />
       </label>
 
