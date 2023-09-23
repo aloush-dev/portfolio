@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { socialLinks } from "@/data";
 import Link from "next/link";
 import { FunctionComponent } from "react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
@@ -24,12 +24,12 @@ export const SocialsHero: FunctionComponent = () => {
           Feel free to reach out, I'd love to hear from you!
         </p>
         <div className="text-6xl flex text-accent">
-          <button className="pr-8">
+          <Link href={socialLinks.github} target="_blank" className="pr-8">
             <SiGithub />
-          </button>
-          <button className="pr-8">
+          </Link>
+          <Link href={socialLinks.linkedin} target="_blank" className="pr-8">
             <SiLinkedin />
-          </button>
+          </Link>
         </div>
       </div>
       <Link href="/contact">
