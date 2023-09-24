@@ -21,16 +21,16 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
 }) => {
   return (
     <li
-      className="text-primary-text border-accent border-4 p-2 rounded-md md:p-4"
+      className="text-primary-text border-accent border-b-4 p-2 md:p-4 mb-10"
       key={project.name}
     >
       <h3 className="text-4xl font-bold">{project.name}</h3>
-      <ul className="flex py-2">
+      <ul className="flex flex-wrap py-2">
         {project.techStack.map((skill, index) => {
           return (
             <li
               key={index}
-              className="px-2 py-1 mr-2 bg-accent text-accent-text font-semibold"
+              className="px-2 py-1 mr-2 mb-2 bg-accent text-accent-text font-semibold"
             >
               {skill}
             </li>

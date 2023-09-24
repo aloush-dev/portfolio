@@ -4,14 +4,30 @@ export const aboutInfo = {
   aboutPageHero: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Sit amet mauris commodo quis imperdiet massa. Integer vitae justo eget magna. Sed cras ornare arcu dui vivamus arcu. Sociis natoque penatibus et magnis dis parturient montes. Dignissim cras tincidunt lobortis feugiat vivamus at. Aliquam faucibus purus in massa. Sapien nec sagittis aliquam malesuada bibendum arcu. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus.`,
 };
 
-export const workExperience = [
-  {
-    jobTitle: "Junior Software Engineer & Mentor",
-    employer: "Northcoders",
-    description: "",
-    bulletPoints: [],
-  },
-];
+export const workExperience = {
+  tech: [
+    {
+      jobTitle: "Software Engineer & Mentor",
+      employer: "Northcoders",
+      description: "",
+      bulletPoints: [],
+    },
+  ],
+  nonTech: [
+    {
+      jobTitle: "First Line Manager",
+      employer: "GXO Logistics",
+      description: "",
+      bulletPoints: [],
+    },
+    {
+      jobTitle: "Warehouse & Website Manager",
+      employer: "Get Wivvit Clothing",
+      description: "",
+      bulletPoints: [],
+    },
+  ],
+};
 
 export const projects = [
   {
@@ -27,6 +43,19 @@ export const projects = [
       "/images/PokerBacker/potscren.png",
     ],
   },
+  {
+    name: "Reconnect Reiki",
+    techStack: ["TypeScript", "NextJS", "Tailwind CSS", "TRPC", "Prisma"],
+    description:
+      "PokerBacker is a robust and user-friendly application designed to assist poker players who pay for others to enter tournaments (backers). This financial tracking tool helps manage and record transactions, providing a clear picture of your investment and its performance. PokerBacker is built using Next.js with React components for a seamless and responsive user experience.",
+    githubLink: "https://github.com/itsaliabdallah/nerdpress",
+    liveLink: "https://www.reconnectreiki.com",
+    images: [
+      "/images/PokerBacker/homescreen.png",
+      "/images/PokerBacker/friendscreen.png",
+      "/images/PokerBacker/potscren.png",
+    ],
+  },
 ];
 
 export const socialLinks = {
@@ -36,17 +65,18 @@ export const socialLinks = {
 
 export const skills = [
   { name: "JavaScript" },
+  { name: "TypeScript" },
   { name: "HTML" },
   { name: "CSS" },
+  { name: "Next.js" },
   { name: "React" },
   { name: "Node.js" },
   { name: "Express" },
-  { name: "Next.js" },
   { name: "TRPC" },
-  { name: "TypeScript" },
   { name: "PostgreSQL" },
   { name: "Tailwind CSS" },
   { name: "Jest" },
+  { name: "Prisma" },
 ];
 
 {
