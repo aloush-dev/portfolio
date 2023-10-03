@@ -7,7 +7,8 @@ import { Resend } from "resend";
 export const ContactForm: FunctionComponent = () => {
   const inputStyle =
     "p-4 my-4 text-black focus:outline-none focus:border-accent focus:ring-4 focus:ring-accent text-base border-accent border-2";
-  const labelStyle = "text-primary-text flex flex-col justify-center m-4 text-xl";
+  const labelStyle =
+    "text-primary-text flex flex-col justify-center m-4 text-xl";
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -19,8 +20,8 @@ export const ContactForm: FunctionComponent = () => {
     resend.emails
       .send({
         from: email,
-        to: "itsaliabdallah@gmail.com",
-        subject: "Email from portfolio",
+        to: "contactform@aloush.dev",
+        subject: "Email from portfolio contact form",
         html: message,
       })
       .then(() => {});
