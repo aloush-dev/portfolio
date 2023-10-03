@@ -27,9 +27,18 @@ export const WorkExperience: FunctionComponent = () => {
       </h2>
       {workExperience.nonTech.map((job, index) => {
         return (
-          <div className="pb-2" key={index}>
-            <h3 className="">{`${job.employer.toUpperCase()} - ${job.jobTitle.toUpperCase()}`}</h3>
+          <div className="pb-4" key={index}>
+            <h3 className="font-bold text-xl">{`${job.employer.toUpperCase()} - ${job.jobTitle.toUpperCase()}`}</h3>
             <p>{job.description}</p>
+            <ul>
+              {job.bulletPoints.map((point, index) => {
+                return (
+                  <li key={index} className="list-disc mx-4 text-accent">
+                    <p className="text-primary-text">{point}</p>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         );
       })}

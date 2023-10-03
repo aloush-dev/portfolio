@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: `Ali Abdallah | Contact`,
+  title: `Aloush.dev | Contact`,
   description:
     "Explore my portfolio showcasing creative web development and design",
 };

@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import { Education } from "@/components/about/Education";
 
 export const metadata: Metadata = {
-  title: `Ali Abdallah | About`,
+  title: `Aloush.dev | About`,
   description:
     "Explore my portfolio showcasing creative web development and design",
 };

@@ -11,7 +11,9 @@ export const Header: FunctionComponent = () => {
   return (
     <header className="bg-header text-header-text flex justify-between items-center p-4 h-[77px] border-b-2 border-accent sticky top-0 z-10">
       <Link href="/">
-        <h1 className="font-black text-2xl">ALI ABDALLAH</h1>
+        <h1 className="font-black text-2xl">
+          ALOUSH<span className="text-accent text-4xl">.</span>DEV
+        </h1>
       </Link>
 
       <nav className="hidden md:block">

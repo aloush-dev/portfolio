@@ -15,6 +15,7 @@ import {
   SiCss3,
   SiTailwindcss,
   SiJest,
+  SiPrisma,
 } from "react-icons/si";
 
 export const AboutHero: FunctionComponent = () => {
@@ -33,10 +34,16 @@ export const AboutHero: FunctionComponent = () => {
             <SiJavascript />
           </li>
           <li className={iconStyle}>
+            <SiTypescript />
+          </li>
+          <li className={iconStyle}>
             <SiHtml5 />
           </li>
           <li className={iconStyle}>
             <SiCss3 />
+          </li>
+          <li className={iconStyle}>
+            <SiNextdotjs />
           </li>
           <li className={iconStyle}>
             <SiReact />
@@ -48,13 +55,7 @@ export const AboutHero: FunctionComponent = () => {
             <SiExpress />
           </li>
           <li className={iconStyle}>
-            <SiNextdotjs />
-          </li>
-          <li className={iconStyle}>
             <SiTrpc />
-          </li>
-          <li className={iconStyle}>
-            <SiTypescript />
           </li>
           <li className={iconStyle}>
             <SiPostgresql />
@@ -64,6 +65,9 @@ export const AboutHero: FunctionComponent = () => {
           </li>
           <li className={iconStyle}>
             <SiJest />
+          </li>
+          <li className={iconStyle}>
+            <SiPrisma />
           </li>
         </ul>
       </div>

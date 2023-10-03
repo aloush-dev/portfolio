@@ -9,14 +9,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {},
+      listStyleType: {
+        disc: "disc",
+      },
+      aspectRatio: {
+        "16/9": "56.25%",
+        "4/3": "75%",
+        "1/1": "100%",
+      },
       minHeight: {
         screenFull: "calc(100svh - 135px)",
       },
       height: {
         hero: "calc(100svh - 77px)",
+        mobileimage: "333.5px",
+        desktopimage: "400px",
       },
       width: {
         "mobile-width": "calc(100vw - 5rem)",
+        mobileimage: "187.5px",
+        desktopimage: "640px",
       },
     },
   },

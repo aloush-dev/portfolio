@@ -9,9 +9,21 @@ import Link from "next/link";
 export const ProjectCard: FunctionComponent<ProjectProps> = ({ project }) => {
   return (
     <>
-      <div className="text-primary-text rounded-md p-2 md:p-4 mb-10">
-        <Link key={project.name} href={`/work/${project.slug}`} passHref>
-          <h3 className="text-4xl text-accent font-bold">{project.name}</h3>
+      <div className="flex flex-col text-primary-text border-y-2 border-accent p-2 md:p-4">
+        <Link key={project.name} href={`/work/${project.slug}`}>
+          <div className="flex justify-between">
+            <div>
+              <h3 className="text-4xl text-primary-text font-bold">
+                {project.name}
+              </h3>
+              <p>{project.shortDescription}</p>
+            </div>
+            <div className="flex justify-end">
+              <button className="bg-accent rounded-sm text-accent-text px-2 py-1 h-min">
+                More
+              </button>
+            </div>
+          </div>
           <ul className="flex flex-wrap py-2">
             {project.techStack.map((skill, index) => {
               return (
@@ -25,10 +37,6 @@ export const ProjectCard: FunctionComponent<ProjectProps> = ({ project }) => {
             })}
           </ul>
         </Link>
-        <div className="flex justify-evenly py-2 md:justify-normal">
-          <GitHubButton githubLink={project.githubLink} />
-          <WebsiteButton liveLink={project.liveLink} />
-        </div>
       </div>
     </>
   );

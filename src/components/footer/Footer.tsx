@@ -9,7 +9,7 @@ export const Footer: FunctionComponent<FooterProps> = ({ setTheme }) => {
   return (
     <footer className="flex bg-footer text-footer-text justify-center items-center p-4 border-t-2 border-accent">
       <div className="text-center">
-        ALI ADBALLAH <span className="p-2">|</span>
+        ALOUSH.DEV <span className="p-2">|</span>
         {currentYear.getFullYear()}
       </div>
       <div className="ml-auto flex">
