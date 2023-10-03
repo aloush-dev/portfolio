@@ -27,6 +27,7 @@ const config: Config = {
           colors: {
             background: "black",
             accent: "#8A3FFC",
+            "secondary-accent": "",
             "primary-text": "white",
             header: "black",
             footer: "black",
@@ -43,6 +44,7 @@ const config: Config = {
             colors: {
               background: "#5ac3b0",
               accent: "#de5935",
+              "secondary-accent": "",
               "primary-text": "white",
               header: "#f7cd46",
               footer: "#f7cd46",
@@ -58,6 +60,7 @@ const config: Config = {
             colors: {
               background: "white",
               accent: "#2F58CD",
+              "secondary-accent": "",
               "primary-text": "black",
               header: "#2F58CD",
               footer: "#2F58CD",
@@ -71,11 +74,12 @@ const config: Config = {
           name: "nature",
           extend: {
             colors: {
-              background: "#172d13",
-              accent: "#d76f30",
-              "primary-text": "white",
-              header: "#6bb77b",
-              footer: "#6bb77b",
+              background: "#e6e2dd",
+              accent: "#d48166",
+              "secondary-accent": "",
+              "primary-text": "black",
+              header: "#373a36",
+              footer: "#373a36",
               "header-text": "white",
               "footer-text": "white",
               "accent-text": "white",

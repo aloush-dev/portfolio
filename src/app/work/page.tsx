@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const Work: FunctionComponent = () => {
   return (
-    <div className="p-8 md:px-60 grid ">
+    <div className="p-8 md:px-60 grid grid-cols-1 md:auto-cols-auto md:grid-flow-col gap-16">
       {projects.map((project) => {
         return <ProjectCard project={project} />;
       })}

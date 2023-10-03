@@ -11,12 +11,19 @@ export const workExperience = {
       employer: "Northcoders",
       description: "",
       bulletPoints: [],
+      bulletPoints2: [],
     },
   ],
   nonTech: [
     {
       jobTitle: "First Line Manager",
       employer: "GXO Logistics",
+      description: "",
+      bulletPoints: [],
+    },
+    {
+      jobTitle: "Event's Manager & Sales Coordinator",
+      employer: "Thrill Pic Media",
       description: "",
       bulletPoints: [],
     },

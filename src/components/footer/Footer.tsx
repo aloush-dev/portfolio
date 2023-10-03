@@ -23,6 +23,16 @@ export const Footer: FunctionComponent<FooterProps> = ({ setTheme }) => {
             <div className="absolute inset-0 w-1/2 h-full bg-[#8A3FFC] transform origin-bottom-left"></div>
           </div>
         </button>
+        <button
+          onClick={() => {
+            setTheme("nature");
+          }}
+          className="px-2 flex justify-center items-center"
+        >
+          <div className="relative w-5 h-5 bg-[#e6e2dd] border-2 border-white">
+            <div className="absolute inset-0 w-1/2 h-full bg-[#d48166] transform origin-bottom-left"></div>
+          </div>
+        </button>
 
         <button
           onClick={() => {
@@ -43,16 +53,6 @@ export const Footer: FunctionComponent<FooterProps> = ({ setTheme }) => {
         >
           <div className="relative w-5 h-5 bg-white border-2 border-white">
             <div className="absolute inset-0 w-1/2 h-full bg-[#2F58CD] transform origin-bottom-left"></div>
-          </div>
-        </button>
-        <button
-          onClick={() => {
-            setTheme("nature");
-          }}
-          className="px-2 flex justify-center items-center"
-        >
-          <div className="relative w-5 h-5 bg-[#172d13] border-2 border-white">
-            <div className="absolute inset-0 w-1/2 h-full bg-[#d76f30] transform origin-bottom-left"></div>
           </div>
         </button>
       </div>
