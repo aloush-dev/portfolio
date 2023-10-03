@@ -4,7 +4,7 @@ import { Header } from "@/components/header/Header";
 import "./globals.css";
 import { Barlow } from "next/font/google";
 import { Footer } from "@/components/footer/Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const barlow = Barlow({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -16,7 +16,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState(() => {
+    const storedTheme = localStorage.getItem("theme");
+    return storedTheme || "";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   return (
     <html className={barlow.className} lang="en">
