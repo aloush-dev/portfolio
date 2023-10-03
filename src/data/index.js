@@ -32,6 +32,7 @@ export const workExperience = {
 export const projects = [
   {
     name: "PokerBacker",
+    slug: "poker-backer",
     techStack: ["TypeScript", "NextJS", "Tailwind CSS"],
     description:
       "PokerBacker is a robust and user-friendly application designed to assist poker players who pay for others to enter tournaments (backers). This financial tracking tool helps manage and record transactions, providing a clear picture of your investment and its performance. PokerBacker is built using Next.js with React components for a seamless and responsive user experience.",
@@ -45,6 +46,7 @@ export const projects = [
   },
   {
     name: "Reconnect Reiki",
+    slug: "reconnect-reiki",
     techStack: ["TypeScript", "NextJS", "Tailwind CSS", "TRPC", "Prisma"],
     description:
       "PokerBacker is a robust and user-friendly application designed to assist poker players who pay for others to enter tournaments (backers). This financial tracking tool helps manage and record transactions, providing a clear picture of your investment and its performance. PokerBacker is built using Next.js with React components for a seamless and responsive user experience.",

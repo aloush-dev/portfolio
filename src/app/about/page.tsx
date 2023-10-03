@@ -3,7 +3,7 @@ import { Skills } from "@/components/about/Skills";
 import { WorkExperience } from "@/components/about/WorkExperience";
 import { FunctionComponent } from "react";
 import type { Metadata } from "next";
-
+import { Education } from "@/components/about/Education";
 
 export const metadata: Metadata = {
   title: `Ali Abdallah | About`,
@@ -17,6 +17,7 @@ const About: FunctionComponent = () => {
       <AboutPageHero />
       <Skills />
       <WorkExperience />
+      <Education />
     </div>
   );
 };

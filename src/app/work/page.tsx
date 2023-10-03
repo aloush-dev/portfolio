@@ -3,7 +3,6 @@ import { projects } from "@/data";
 import { FunctionComponent } from "react";
 import type { Metadata } from "next";
 
-
 export const metadata: Metadata = {
   title: `Ali Abdallah | Work`,
   description:
@@ -12,12 +11,10 @@ export const metadata: Metadata = {
 
 const Work: FunctionComponent = () => {
   return (
-    <div className="p-8 md:px-60">
-      <ul>
-        {projects.map((project) => {
-          return <ProjectCard project={project} />;
-        })}
-      </ul>
+    <div className="p-8 md:px-60 grid ">
+      {projects.map((project) => {
+        return <ProjectCard project={project} />;
+      })}
     </div>
   );
 };

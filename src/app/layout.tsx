@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={theme}>
         <main className="bg-background">
           <Header />
-          {children}
+          <div className="min-h-screenFull">{children}</div>
           <Footer setTheme={setTheme} />
         </main>
       </body>

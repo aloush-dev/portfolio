@@ -9,6 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {},
+      minHeight: {
+        screenFull: "calc(100svh - 135px)",
+      },
       height: {
         hero: "calc(100svh - 77px)",
       },
