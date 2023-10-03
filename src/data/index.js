@@ -110,6 +110,7 @@ export const projects = [
 export const socialLinks = {
   github: "https://github.com/itsaliabdallah",
   linkedin: "https://www.linkedin.com/in/its-ali-abdallah/",
+  codewars: "https://www.codewars.com/users/aloush",
 };
 
 export const skills = [

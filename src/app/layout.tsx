@@ -4,6 +4,7 @@ import { Header } from "@/components/header/Header";
 import "./globals.css";
 import { Barlow } from "next/font/google";
 import { Footer } from "@/components/footer/Footer";
+import useStorage from "@/hooks/useLocalStorage";
 import { useEffect, useState } from "react";
 
 const barlow = Barlow({
@@ -16,13 +17,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const { getItem, setItem, removeItem } = useStorage();
+
   const [theme, setTheme] = useState(() => {
-    const storedTheme = localStorage.getItem("theme");
-    return storedTheme || "";
+    if (typeof window !== "undefined") {
+      const storedTheme = getItem("theme", "local");
+      return storedTheme || "";
+    }
+    return "";
   });
 
   useEffect(() => {
-    localStorage.setItem("theme", theme);
+    setItem("theme", theme, "local");
   }, [theme]);
 
   return (
