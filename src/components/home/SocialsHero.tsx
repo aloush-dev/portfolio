@@ -33,7 +33,7 @@ export const SocialsHero: FunctionComponent = () => {
         </div>
       </div>
       <Link href="/contact">
-        <div className="bg-accent text-accent-text w-mobile-width h-40 md:w-80 md:h-80 mb-20 md:mb-60 lg:mb-2 md:rounded-full flex justify-center items-center font-black text-xl md:text-4xl transition-transform hover:scale-110">
+        <div className="bg-accent text-accent-text h-60 w-60 md:w-80 md:h-80 mb-20 md:mb-60 lg:mb-2 rounded-full flex justify-center items-center font-black text-2xl md:text-4xl transition-transform hover:scale-110">
           <p>CONTACT ME</p>
         </div>
       </Link>

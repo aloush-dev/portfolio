@@ -30,8 +30,8 @@ export const Footer: FunctionComponent<FooterProps> = ({ setTheme }) => {
           }}
           className="px-2 flex justify-center items-center"
         >
-          <div className="relative w-5 h-5 bg-black border-2 border-white">
-            <div className="absolute inset-0 w-1/2 h-full bg-[#2F58CD] transform origin-bottom-left"></div>
+          <div className="relative w-5 h-5 bg-[#5ac3b0] border-2 border-white">
+            <div className="absolute inset-0 w-1/2 h-full bg-[#de5935] transform origin-bottom-left"></div>
           </div>
         </button>
 
