@@ -45,7 +45,7 @@ export const ContactForm: FunctionComponent = () => {
     }, 3000);
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!emailRegex.test(email)) {
       setButtonState("error");
@@ -56,21 +56,25 @@ export const ContactForm: FunctionComponent = () => {
         setErrorMsg("");
       }, 3000);
     } else {
-      const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
-      resend.emails
-        .send({
-          from: email,
-          to: "contactform@aloush.dev",
-          subject: "Email from portfolio contact form",
-          html: message,
-        })
-        .then(() => {
-          onSuccess();
-        })
-        .catch((err) => {
-          console.log(err);
-          onError();
+      try {
+        const response = await fetch("/api/send", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, message }),
         });
+
+        if (response.ok) {
+          onSuccess();
+        } else {
+          console.error("Email sending failed");
+          onError();
+        }
+      } catch (error) {
+        console.error("An error occurred", error);
+        onError();
+      }
     }
   };
 
