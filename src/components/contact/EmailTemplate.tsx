@@ -1,13 +1,22 @@
 import { FunctionComponent } from "react";
 
 interface EmailTemplateProps {
-  firstName: string;
+  parsedData: {
+    name: string;
+    email: string;
+    message: string;
+  };
 }
 
 export const EmailTemplate: FunctionComponent<Readonly<EmailTemplateProps>> = ({
-  firstName,
-}) => (
-  <div>
-    <h1>Welcome, {firstName}!</h1>
-  </div>
-);
+  parsedData,
+}) => {
+  console.log("here", parsedData);
+  return (
+    <div>
+      <h1>Email From, {parsedData.name}!</h1>
+      <h2>{parsedData.email}</h2>
+      <p>{parsedData.message}</p>
+    </div>
+  );
+};
