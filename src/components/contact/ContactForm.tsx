@@ -2,7 +2,6 @@
 
 import { FormEvent, FunctionComponent, useState } from "react";
 import { TbSend } from "react-icons/tb";
-import { Resend } from "resend";
 
 export const ContactForm: FunctionComponent = () => {
   const inputStyle =
@@ -20,22 +19,28 @@ export const ContactForm: FunctionComponent = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [buttonState, setButtonState] = useState("default");
+  const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
+  const [buttonMsg, setButtonMsg] = useState("SEND");
 
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   const onSuccess = () => {
+    setLoading(false);
     setButtonState("success");
+    setButtonMsg("THANK YOU!");
     setName("");
     setEmail("");
     setMessage("");
 
     setTimeout(() => {
       setButtonState("default");
+      setButtonMsg("SEND");
     }, 3000);
   };
 
   const onError = () => {
+    setLoading(false);
     setButtonState("error");
     setErrorMsg("Could not send please try again later");
 
@@ -47,6 +52,7 @@ export const ContactForm: FunctionComponent = () => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
     if (!emailRegex.test(email)) {
       setButtonState("error");
       setErrorMsg("Please enter a valid email address");
@@ -119,9 +125,11 @@ export const ContactForm: FunctionComponent = () => {
         >
           {errorMsg ? (
             <p className="duration-300 ease-in-out">{`${errorMsg}`}</p>
+          ) : loading ? (
+            "sending..."
           ) : (
             <div className="flex justify-center items-center text-transition">
-              SEND <TbSend className="pl-2 text-2xl" />
+              {buttonMsg} <TbSend className="pl-2 text-2xl" />
             </div>
           )}
         </button>
