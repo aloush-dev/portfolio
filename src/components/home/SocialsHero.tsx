@@ -1,7 +1,7 @@
 import { socialLinks } from "@/data";
 import Link from "next/link";
 import { FunctionComponent } from "react";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiCodewars } from "react-icons/si";
 
 const blob = (
   <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -29,6 +29,9 @@ export const SocialsHero: FunctionComponent = () => {
           </Link>
           <Link href={socialLinks.linkedin} target="_blank" className="pr-8">
             <SiLinkedin />
+          </Link>
+          <Link href={socialLinks.codewars} target="_blank" className="pr-8">
+            <SiCodewars />
           </Link>
         </div>
       </div>
