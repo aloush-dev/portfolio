@@ -11,7 +11,6 @@ interface EmailTemplateProps {
 export const EmailTemplate: FunctionComponent<Readonly<EmailTemplateProps>> = ({
   parsedData,
 }) => {
-  console.log("here", parsedData);
   return (
     <div>
       <h1>Email From, {parsedData.name}!</h1>

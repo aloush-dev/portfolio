@@ -46,8 +46,6 @@ export async function POST(req: any) {
     const decodedData = await readData();
     const parsedData = JSON.parse(decodedData);
 
-    console.log("route", parsedData);
-
     const data = await resend.emails.send({
       from: "ContactForm <contactform@aloush.dev>",
       to: ["contactform@aloush.dev"],
