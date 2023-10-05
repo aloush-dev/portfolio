@@ -1,7 +1,7 @@
 export const aboutInfo = {
   aboutHero:
     "Hello, I'm Ali, a passionate full-stack developer with a deep love for front-end development. \n\n I specialize in crafting immersive and user-friendly web experiences using the power of JavaScript. Whether it's building responsive interfaces, optimizing user interactions, or breathing life into web applications, I thrive on the art of front-end development. Join me on a journey through my projects, where you'll discover the blend of creativity and technical prowess that defines my work.",
-  aboutPageHero: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Sit amet mauris commodo quis imperdiet massa. Integer vitae justo eget magna. Sed cras ornare arcu dui vivamus arcu. Sociis natoque penatibus et magnis dis parturient montes. Dignissim cras tincidunt lobortis feugiat vivamus at. Aliquam faucibus purus in massa. Sapien nec sagittis aliquam malesuada bibendum arcu. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus.`,
+  aboutPageHero: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Sit amet mauris commodo quis imperdiet massa. Integer vitae justo eget magna. Sed cras ornare arcu dui vivamus arcu. Sociis natoque penatibus et magnis dis parturient montes. Dignissim cras tincidunt lobortis feugiat vivamus at. Aliquam faucibus purus in massa. Sapien nec sagittis aliquam malesuada bibendum arcu. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Sit amet mauris commodo quis imperdiet massa. Integer vitae justo eget magna. Sed cras ornare arcu dui vivamus arcu. Sociis natoque penatibus et magnis dis parturient montes. Dignissim cras tincidunt lobortis feugiat vivamus at. Aliquam faucibus purus in massa. Sapien nec sagittis aliquam malesuada bibendum arcu. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus.`,
 };
 
 export const workExperience = {
@@ -105,6 +105,23 @@ export const projects = [
       "/images/Alitt/sidemenu.png",
     ],
   },
+  {
+    name: "Quick My Link",
+    slug: "quick-my-link",
+    type: "desktop",
+    techStack: ["Vue.js", "Vite", "JavaScript"],
+    shortDescription: "URL shortener and click tracker",
+    description:
+      "I developed a user-friendly URL shortening web application using Vue.js as the front-end framework. This platform empowers users to easily shorten long URLs into concise links, making them more shareable and manageable.\n\nThe website also offers robust tracking capabilities, allowing users to monitor and analyze how often their shortened links are clicked. Additionally, it provides the flexibility to enable or disable links as needed, providing full control over the shared content.\n\nWith a clean and intuitive interface, this URL shortening tool streamlines the process of managing and tracking links, making it a valuable asset for enhancing online content distribution and analysis.",
+    githubLink: "https://github.com/itsaliabdallah/url-shortener",
+    liveLink: "https://quick-my-link.vercel.app/",
+    images: [
+      "/images/Alitt/login.png",
+      "/images/Alitt/home.png",
+      "/images/Alitt/post.png",
+      "/images/Alitt/sidemenu.png",
+    ],
+  },
 ];
 
 export const socialLinks = {
@@ -112,6 +129,11 @@ export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/its-ali-abdallah/",
   codewars: "https://www.codewars.com/users/aloush",
 };
+
+export const education = [
+  { school: "Northcoders", course: "Skills Bootcamp in Software Development" },
+  { school: "Staffordshire University", course: "Film, TV & Radio Studies" },
+];
 
 export const skills = [
   { name: "JavaScript" },
