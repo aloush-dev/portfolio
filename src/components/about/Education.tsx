@@ -17,7 +17,10 @@ export const Education: FunctionComponent = () => {
         <div className="lg:w-3/5 text-right">
           {education.map((obj) => {
             return (
-              <h3 className="font-bold text-xl">{`${obj.school} - ${obj.course}`}</h3>
+              <div className="py-4">
+                <h3 className="font-bold text-xl">{`${obj.school} - ${obj.course}`}</h3>
+                <p>{obj.description}</p>
+              </div>
             );
           })}
         </div>

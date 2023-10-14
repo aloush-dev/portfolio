@@ -10,9 +10,33 @@ export const workExperience = {
     {
       jobTitle: "Software Engineer & Mentor",
       employer: "Northcoders",
-      description: "",
-      bulletPoints: [],
-      bulletPoints2: [],
+      description:
+        "In my role at Northcoders, I guide and mentor future software developers while actively contributing to software projects. I provide one-on-one mentorship, code reviews, and feedback to enhance students' work.\n\nI collaborate with cross-functional teams to develop web applications, ensuring high-quality solutions. I lead interactive coding sessions and discussions, fostering a culture of collaboration.\n\nI help students refine their problem-solving and debugging techniques and share industry insights for their career preparation. Creating an inclusive learning environment is central to my role. I tailor my mentoring techniques to meet individual needs and collaborate with fellow mentors to enhance the learning experience.\n\nIn summary, my role at Northcoders empowers students to become proficient software engineers, while I actively contribute to software development projects.",
+      bulletPoints: [
+        "Developed and maintained web applications using JavaScript, React, Node.js, and more.",
+        "Collaborated with cross-functional teams to define project requirements and scope.",
+        "Participated in the full software development lifecycle, from requirement analysis to deployment.",
+        "Implemented best practices in software engineering, including version control, code reviews, and automated testing.",
+        "Utilized agile methodologies to prioritize tasks and deliver features efficiently.",
+        "Worked with databases (e.g., PostgreSQL) to design and optimize data models.",
+        "Employed responsive web design principles and CSS frameworks for user-friendly interfaces.",
+        "Demonstrated problem-solving skills by identifying and resolving technical challenges.",
+        "Kept up-to-date with industry trends and emerging technologies through continuous learning.",
+        "Contributed to Northcoders' learning environment and coding challenges.",
+      ],
+      bulletPoints2: [
+        "Provided guidance and support to junior developers, fostering their growth.",
+        "Conducted one-on-one mentoring sessions to address individual learning needs.",
+        "Offered code reviews and feedback to enhance the quality of students' work.",
+        "Facilitated interactive coding sessions and group discussions for collaborative learning.",
+        "Assisted students in refining their problem-solving and debugging techniques.",
+        "Shared industry insights and real-world experiences to prepare students for their careers.",
+        "Empowered students to become proficient software engineers through mentorship.",
+        "Created a supportive and inclusive learning environment for students as a positive mentor.",
+        "Adapted mentoring techniques to meet the unique needs and learning styles of each mentee.",
+        "Collaborated with fellow mentors and instructors to enhance the mentoring program's effectiveness.",
+        "Contributed to the development of curriculum and coding challenges to ensure up-to-date content.",
+      ],
     },
   ],
   nonTech: [
@@ -132,8 +156,18 @@ export const socialLinks = {
 };
 
 export const education = [
-  { school: "Northcoders", course: "Skills Bootcamp in Software Development" },
-  { school: "Staffordshire University", course: "Film, TV & Radio Studies" },
+  {
+    school: "Northcoders",
+    course: "Skills Bootcamp in Software Development",
+    description:
+      "As a Northcoders student, I underwent intensive and comprehensive coding bootcamp training. I developed expertise in modern web development technologies and practices, honed my problem-solving skills, and gained hands-on experience in software engineering. My time at Northcoders equipped me with the skills and knowledge necessary to embark on a successful career in the tech industry.",
+  },
+  {
+    school: "Staffordshire University",
+    course: "Film, TV & Radio Studies",
+    description:
+      "During my time at Staffordshire University, I pursued a degree in Film, TV, and Radio Studies. This program provided me with a deep understanding of the world of media and equipped me with the knowledge and critical thinking skills necessary to analyze and appreciate various forms of visual storytelling. I engaged in practical projects, research, and coursework that allowed me to explore the dynamic and creative field of film and media production. ",
+  },
 ];
 
 export const skills = [

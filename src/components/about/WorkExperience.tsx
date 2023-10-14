@@ -12,26 +12,39 @@ export const WorkExperience: FunctionComponent = () => {
       </h2>
       <div className="h-1 w-full bg-accent mb-8"></div>
       <div className="lg:flex">
-        <div className="lg:w-3/5">
+        <div className="lg:w-4/5">
           {workExperience.tech.map((job, index) => {
             return (
               <div className="pb-2" key={index}>
                 <h3 className="font-bold text-xl">{`${job.employer.toUpperCase()} - ${job.jobTitle.toUpperCase()}`}</h3>
-                <p>{job.description}</p>
-                <ul>
-                  {job.bulletPoints.map((point, index) => {
-                    return (
-                      <li key={index} className="list-disc mx-4 text-accent">
-                        <p className="text-primary-text">{point}</p>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <p className="whitespace-pre-line py-6">{job.description}</p>
+                <div className="flex justify-evenly">
+                  <ul className="mr-2">
+                    <h4 className="text-xl font-bold">Software Engineer</h4>
+                    {job.bulletPoints.map((point, index) => {
+                      return (
+                        <li key={index} className="list-disc mx-4 text-accent">
+                          <p className="text-primary-text">{point}</p>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                  <ul className="ml-2">
+                    <h4 className="text-xl font-bold">Mentor</h4>
+                    {job.bulletPoints2.map((point, index) => {
+                      return (
+                        <li key={index} className="list-disc mx-4 text-accent">
+                          <p className="text-primary-text">{point}</p>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
               </div>
             );
           })}
         </div>
-        <div className="hidden lg:w-2/5 text-9xl text-accent lg:flex justify-center items-center">
+        <div className="hidden lg:w-1/5 text-9xl text-accent lg:flex justify-center items-center">
           <BsPersonWorkspace />
         </div>
       </div>
