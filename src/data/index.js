@@ -105,7 +105,7 @@ export const projects = [
     shortDescription: "Online blog for reiki services",
     description:
       "This website offers a seamless and engaging experience on both desktop and mobile devices, adapting to various screen sizes. It features a comprehensive blog posting system that regularly publishes informative and relevant content to keep users informed and engaged.\n\nBehind the scenes, the website is powered by a robust admin dashboard that efficiently manages various aspects of its online presence. This includes overseeing services, FAQs, and blog posts.\n\nThe website showcases the experiences and testimonials of valued customers, which can be managed and approved through the admin dashboard.\n\nBuilt with cutting-edge technologies, including Next.js for a fast and dynamic frontend, TypeScript for enhanced development and maintenance, Prisma for efficient database operations, and Tailwind CSS for a stylish and responsive design. Secure authentication is also a priority, with NextAuth.js safeguarding user data and providing a secure, personalized experience.\n\nExplore the website's services and blog posts, and feel free to get in touch for any inquiries. It's here to deliver a top-notch online experience for users.",
-    githubLink: "https://github.com/itsaliabdallah/nerdpress",
+    githubLink: "https://github.com/aloush-dev/nerdpress",
     liveLink: "https://www.reconnectreiki.com",
     images: [
       "/images/ReconnectReiki/reconnecthome.png",
@@ -121,7 +121,7 @@ export const projects = [
     shortDescription: "Recreation of a news site like reddit",
     description:
       "PokerBacker is a robust and user-friendly application designed to assist poker players who pay for others to enter tournaments (backers). This financial tracking tool helps manage and record transactions, providing a clear picture of your investment and its performance. PokerBacker is built using Next.js with React components for a seamless and responsive user experience.",
-    githubLink: "https://github.com/itsaliabdallah/alitt",
+    githubLink: "https://github.com/aloush-dev/alitt",
     liveLink: "https://alitt.vercel.app/",
     images: [
       "/images/Alitt/login.png",
@@ -138,8 +138,32 @@ export const projects = [
     shortDescription: "URL shortener and click tracker",
     description:
       "I developed a user-friendly URL shortening web application using Vue.js as the front-end framework. This platform empowers users to easily shorten long URLs into concise links, making them more shareable and manageable.\n\nThe website also offers robust tracking capabilities, allowing users to monitor and analyze how often their shortened links are clicked. Additionally, it provides the flexibility to enable or disable links as needed, providing full control over the shared content.\n\nWith a clean and intuitive interface, this URL shortening tool streamlines the process of managing and tracking links, making it a valuable asset for enhancing online content distribution and analysis.",
-    githubLink: "https://github.com/itsaliabdallah/url-shortener",
+    githubLink: "https://github.com/aloush-dev/url-shortener",
     liveLink: "https://quick-my-link.vercel.app/",
+    images: [
+      "/images/Alitt/login.png",
+      "/images/Alitt/home.png",
+      "/images/Alitt/post.png",
+      "/images/Alitt/sidemenu.png",
+    ],
+  },
+  {
+    name: "Adventures of Northcoders",
+    slug: "adventures-of-northcoders",
+    type: "desktop",
+    techStack: [
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "SQLite",
+      "Next.js",
+      "TRPC",
+    ],
+    shortDescription: "Advent of code style challenges",
+    description:
+      "An advent of code style challenge website built using NextJS. The website features a range of coding challenges that test your problem-solving skills and programming knowledge. Each challenge presents a unique problem to solve, with varying levels of difficulty to challenge your coding abilities.\n\nThe website provides a user-friendly interface for selecting and solving challenges, with real-time feedback on your progress. You can track your completion status and view detailed solutions to each challenge to enhance your learning experience.\n\nWhether you're a beginner looking to improve your coding skills or an experienced developer seeking a fun and engaging challenge, the Adventures of Northcoders website offers a diverse range of coding challenges to test your abilities and expand your knowledge.",
+    githubLink: "https://github.com/aloush-dev/adventures-of-northcoders",
+    liveLink: "https://adventures-of-northcoders.vercel.app/",
     images: [
       "/images/Alitt/login.png",
       "/images/Alitt/home.png",
@@ -150,7 +174,7 @@ export const projects = [
 ];
 
 export const socialLinks = {
-  github: "https://github.com/itsaliabdallah",
+  github: "https://github.com/aloush-dev",
   linkedin: "https://www.linkedin.com/in/its-ali-abdallah/",
   codewars: "https://www.codewars.com/users/aloush",
 };

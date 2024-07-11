@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { FunctionComponent, useState } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
@@ -29,7 +29,7 @@ export const ImageSlider: FunctionComponent<imageSliderProps> = ({
 
   return (
     <div className="h-full w-full relative">
-      <Image fill={true} alt="slider images" src={imageUrls[imageIndex]} />
+      <Image  alt="slider images" src={imageUrls[imageIndex]} />
       <button
         className="absolute left-0 hover:bg-black hover:text-white h-full p-2 opacity-50 text-black"
         onClick={showPreviousImage}

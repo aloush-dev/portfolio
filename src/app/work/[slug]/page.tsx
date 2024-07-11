@@ -1,6 +1,6 @@
 import { GitHubButton } from "@/components/reuseable/GitHubButton";
 import { WebsiteButton } from "@/components/reuseable/WebsiteButton";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { FunctionComponent } from "react";
 import { projects } from "../../../data/index";
 import { Project } from "@/types/types";

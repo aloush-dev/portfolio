@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { aboutInfo } from "../../data/index";
 import aboutHero from "../../../public/images/aboutHero.png";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import {
   SiJavascript,
   SiReact,

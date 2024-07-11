@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { FunctionComponent } from "react";
 import heroImage from "../../../public/images/hero.jpeg";
 import heroImage2 from "../../../public/images/hero2.jpg";

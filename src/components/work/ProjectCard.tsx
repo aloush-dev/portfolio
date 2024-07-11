@@ -9,7 +9,7 @@ import Link from "next/link";
 export const ProjectCard: FunctionComponent<ProjectProps> = ({ project }) => {
   return (
     <>
-      <div className="flex flex-col text-primary-text border-y-2 border-accent p-2 md:p-4">
+      <div className="flex flex-col text-primary-text border-2 rounded-lg border-accent p-2 md:p-4">
         <Link key={project.name} href={`/work/${project.slug}`}>
           <div className="flex justify-between">
             <div>
