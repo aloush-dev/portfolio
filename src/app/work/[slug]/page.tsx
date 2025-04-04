@@ -1,22 +1,29 @@
 import { GitHubButton } from "@/components/reuseable/GitHubButton";
 import { WebsiteButton } from "@/components/reuseable/WebsiteButton";
-import Image from "next/legacy/image";
-import { FunctionComponent } from "react";
+import type { FunctionComponent } from "react";
 import { projects } from "../../../data/index";
-import { Project } from "@/types/types";
-import type { Metadata } from "next";
+import type { Metadata, ResolvingMetadata } from "next";
 import Link from "next/link";
-import { ImageSlider } from "@/components/reuseable/ImageSlider";
-
-export const metadata: Metadata = {
-  title: `Aloush.dev | Work`,
-  description:
-    "Explore my portfolio showcasing creative web development and design",
-};
+import { ProjectGallery } from "@/components/work/ProjectGallery";
+import { LuArrowLeft } from "react-icons/lu";
 
 type ProjectPageProps = {
   params: { slug: string };
 };
+
+export async function generateMetadata(
+  { params }: ProjectPageProps,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { slug } = params;
+  const project = projects.find((project) => project.slug === slug);
+
+  return {
+    title: `${project?.name || "Project"} | Aloush.dev`,
+    description:
+      project?.shortDescription || "View project details and screenshots",
+  };
+}
 
 export async function generateStaticParams() {
   return projects.map((project) => {
@@ -26,67 +33,65 @@ export async function generateStaticParams() {
 
 const ProjectPage: FunctionComponent<ProjectPageProps> = ({ params }) => {
   const { slug } = params;
+  const project = projects.find((project) => project.slug === slug);
 
-  const project: Project = projects.filter(
-    (project) => project.slug === slug
-  )[0];
+  if (!project) {
+    return (
+      <div className="p-8 md:px-60 text-primary-text">Project not found</div>
+    );
+  }
 
   return (
-    <section>
-      <Link href="/work">
-        <button className="text-primary-text mt-8 ml-8 md:ml-60">
-          Back to all
-        </button>
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <Link
+        href="/work"
+        className="inline-flex items-center text-primary-text hover:text-accent transition-colors mb-8 group"
+      >
+        <LuArrowLeft className="w-4 h-4 mr-2 transition-transform group-hover:-translate-x-1" />
+        <span className="font-medium">Back to all projects</span>
       </Link>
-      <li className="text-primary-text p-8 md:px-60" key={project.name}>
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between">
-          <div>
-            <h3 className="text-4xl font-bold">{project.name}</h3>
-            <ul className="flex flex-wrap pt-2">
-              {project.techStack.map((skill, index) => {
-                return (
-                  <li
-                    key={index}
-                    className="px-2 py-1 mr-2 mb-2 bg-accent text-accent-text font-semibold"
-                  >
-                    {skill}
-                  </li>
-                );
-              })}
-            </ul>
+
+      <article className="space-y-10">
+        <header className="space-y-6">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold text-primary-text">
+                {project.name}
+              </h1>
+              <p className="text-primary-text/70 mt-2 text-lg">
+                {project.shortDescription}
+              </p>
+            </div>
+
+            <div className="flex space-x-4">
+              <GitHubButton githubLink={project.githubLink} />
+              <WebsiteButton liveLink={project.liveLink} />
+            </div>
           </div>
 
-          <div className="flex justify-evenly py-2 md:justify-normal">
-            <GitHubButton githubLink={project.githubLink} />
-            <WebsiteButton liveLink={project.liveLink} />
-          </div>
+          <ul className="flex flex-wrap gap-2">
+            {project.techStack.map((skill, index) => (
+              <li
+                key={index}
+                className="px-3 py-1 bg-accent/10 text-accent-text rounded-full text-sm font-medium"
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </header>
+
+        <ProjectGallery
+          images={project.images}
+          type={project.type as "desktop" || "desktop"}
+        />
+
+        <div className="prose prose-lg dark:prose-invert max-w-none">
+          <p className="text-primary-text/90 whitespace-pre-line leading-relaxed">
+            {project.description}
+          </p>
         </div>
-
-        {/* {project.type === "desktop" ? (
-          <div className="w-mobile-width h-mobileimage">
-            <ImageSlider imageUrls={project.images} />
-          </div>
-        ) : ( */}
-        <div className="flex justify-center items-center">
-          {project.images.map((image, index) => {
-            return (
-              <div key={index} className="px-2">
-                <Image
-                  className="border-2 border-accent"
-                  priority={true}
-                  alt={`screenshot for ${project.name}`}
-                  src={image}
-                  width={390}
-                  height={844}
-                />
-              </div>
-            );
-          })}
-        </div>
-        {/* )} */}
-
-        <p className="py-4 whitespace-pre-line">{project.description}</p>
-      </li>
+      </article>
     </section>
   );
 };

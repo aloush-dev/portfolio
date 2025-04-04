@@ -11,10 +11,15 @@ export const metadata: Metadata = {
 
 const Work: FunctionComponent = () => {
   return (
-    <div className="p-8 md:px-20 lg:px-60 grid grid-cols-1 md:grid-cols-2 gap-8">
-      {projects.map((project) => {
-        return <ProjectCard project={project} />;
-      })}
+    <div className="p-8 md:px-20 lg:px-60">
+      <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary-text">
+        My Work
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
+      </div>
     </div>
   );
 };
