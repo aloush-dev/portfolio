@@ -45,7 +45,7 @@ const ProjectPage: FunctionComponent<ProjectPageProps> = ({ params }) => {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <Link
         href="/work"
-        className="inline-flex items-center text-primary-text hover:text-accent transition-colors mb-8 group"
+        className="inline-flex items-center text-primary-text  transition-colors mb-8 group bg-accent p-2 rounded-lg shadow-md"
       >
         <LuArrowLeft className="w-4 h-4 mr-2 transition-transform group-hover:-translate-x-1" />
         <span className="font-medium">Back to all projects</span>
@@ -83,7 +83,7 @@ const ProjectPage: FunctionComponent<ProjectPageProps> = ({ params }) => {
 
         <ProjectGallery
           images={project.images}
-          type={project.type as "desktop" || "desktop"}
+          type={(project.type as "desktop") || "desktop"}
         />
 
         <div className="prose prose-lg dark:prose-invert max-w-none">
